@@ -11,7 +11,7 @@ namespace PalindromeExercise
         public bool IsAPalindrome(string palindrome)
         {
             var reversed = "";
-            for (int i = palindrome.Length - 1; i >= 0; i++)
+            for (int i = palindrome.Length - 1; i >= 0; i--)
             {
                 reversed += palindrome[i];
             }
@@ -24,6 +24,10 @@ namespace PalindromeExercise
             {
                 return false;
             }
+            
+            
         }
+
+        
     }
 }
